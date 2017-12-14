@@ -10,12 +10,13 @@ export default props =>(
 const styles = StyleSheet.create({
   topo:{
     backgroundColor: '#428ff4',
-    height: 50,
+    padding: 10,
     alignItems: 'center',
     justifyContent: 'center'
   },
   txtTitle:{
     fontSize: 25,
     color: '#fff',
+    fontWeight: 'bold'
   }
 });
