@@ -1,10 +1,9 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-//import Cabecalho from './Cabecalho';
+import Visor from './Visor';
 
 const Resultado = props =>(
-  //<Cabecalho />
-  <Text>Painel</Text>
+  <Visor />
 );
 
 export { Resultado };

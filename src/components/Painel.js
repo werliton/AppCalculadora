@@ -1,10 +1,15 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-//import Cabecalho from './Cabecalho';
+import Entrada from './Entrada';
+import Operacao from './Operacao';
+import Comando from './Comando';
 
 const Painel = props =>(
-  //<Cabecalho />
-  <Text>Painel</Text>
+  <View>
+    <Entrada />
+    <Operacao />
+    <Comando />
+  </View>
 );
 
 export { Painel };
