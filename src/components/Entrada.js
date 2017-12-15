@@ -1,19 +1,19 @@
 import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
+import Numero from './Numero';
+import { View, StyleSheet } from 'react-native';
 
 export default props => (
-    <View>
-      <TextInput
-      style={styles.visor}
-        placeholder='Entrada'
-        editable={false}
-      />
+  <View>
+    <View style={styles.entrada}>
+      <Numero />
+      <Numero />
     </View>
+  </View>
 );
 
 const styles = StyleSheet.create({
-  visor:{
-    height: 100,
-    fontSize: 18
+  entrada:{
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 });
