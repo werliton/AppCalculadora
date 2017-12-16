@@ -1,14 +1,8 @@
 import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
+import { View, TextInput, StyleSheet, Button } from 'react-native';
 
 export default props => (
-    <View>
-      <TextInput
-      style={styles.visor}
-        placeholder='Entrada'
-        editable={false}
-      />
-    </View>
+    <Button title='Calcular'/>
 );
 
 const styles = StyleSheet.create({
