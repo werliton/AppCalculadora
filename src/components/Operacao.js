@@ -1,19 +1,16 @@
 import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
+import { Picker ,StyleSheet } from 'react-native';
 
 export default props => (
-    <View>
-      <TextInput
-      style={styles.visor}
-        placeholder='Operacao'
-        editable={false}
-      />
-    </View>
+    <Picker style={styles.operacao}>
+      <Picker.Item label='Soma' value='soma'/>
+      <Picker.Item label='Subtração' value='subracao'/>
+    </Picker>
 );
 
 const styles = StyleSheet.create({
-  visor:{
-    height: 100,
-    fontSize: 18
+  operacao:{
+    marginTop: 15,
+    marginBottom: 15
   }
 });
